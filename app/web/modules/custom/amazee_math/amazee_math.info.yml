@@ -1,0 +1,5 @@
+name: Amazee Math
+description: Mathematical Lexer & Parser
+package: custom
+type: module
+core: 8.x

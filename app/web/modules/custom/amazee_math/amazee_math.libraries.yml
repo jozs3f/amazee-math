@@ -1,0 +1,19 @@
+react:
+  remote: https://github.com/facebook/react
+  version: 16.9
+  license:
+    name: MIT
+    url: https://github.com/facebook/react/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    https://unpkg.com/react@16/umd/react.production.min.js: { type: external, minified: true }
+    https://unpkg.com/react-dom@16/umd/react-dom.production.min.js: { type: external, minified: true }
+
+amazee_math.react:
+  version: 1.x
+  js:
+    js/amazee_math_react.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - amazee_math/react

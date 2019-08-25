@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="core/tests/bootstrap.php" colors="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutChangesToGlobalState="true">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>modules/custom/amazee_math/tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

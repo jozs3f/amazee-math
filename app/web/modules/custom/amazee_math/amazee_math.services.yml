@@ -1,0 +1,5 @@
+services:
+  amazee_math.lexer:
+      class: Drupal\amazee_math\Services\LexerService
+  amazee_math.parser:
+      class: Drupal\amazee_math\Services\ParserService
