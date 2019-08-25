@@ -1,0 +1,28 @@
+uuid: 43599a31-b6ab-4c17-a677-923c89e4149a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lexer_parser.field_lexerparser_data
+    - node.type.lexer_parser
+  module:
+    - amazee_math
+    - user
+id: node.lexer_parser.default
+targetEntityType: node
+bundle: lexer_parser
+mode: default
+content:
+  field_lexerparser_data:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: amazee_lexer
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

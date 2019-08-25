@@ -1,0 +1,19 @@
+uuid: e71f1aef-c48e-40f1-94e1-83119a4850b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lexerparser_data
+    - node.type.lexer_parser
+id: node.lexer_parser.field_lexerparser_data
+field_name: field_lexerparser_data
+entity_type: node
+bundle: lexer_parser
+label: Data
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

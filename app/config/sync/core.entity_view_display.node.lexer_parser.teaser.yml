@@ -1,0 +1,20 @@
+uuid: 482d117b-7b59-409b-97c1-8e40bbde68d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.lexer_parser
+  module:
+    - user
+id: node.lexer_parser.teaser
+targetEntityType: node
+bundle: lexer_parser
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
