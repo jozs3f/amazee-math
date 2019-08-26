@@ -1,7 +1,7 @@
 class App extends React.Component {
 
     state = {
-        value: this.props.expression
+        value: this.props.expression,
     };
 
     handleMouseEnter = () => {
@@ -16,22 +16,11 @@ class App extends React.Component {
         });
     }
 
-    render() {
+    render() {    
          return React.createElement('div', {
-            style: {
-            },
             onMouseEnter: this.handleMouseEnter,
             onMouseLeave: this.handleMouseLeave
-         }, `Expression/Value: ${
-            React.createElement('span', {
-                style: {
-                },
-                onMouseEnter: this.handleMouseEnter,
-                onMouseLeave: this.handleMouseLeave
-             }, `Expression/Value: ${
-                React.createElement
-             }`
-         }`);
+         }, `Expression/Value: ${this.state.value}`);
     }
 }
 
