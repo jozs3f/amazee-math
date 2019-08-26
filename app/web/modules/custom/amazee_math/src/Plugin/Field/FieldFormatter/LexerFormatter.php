@@ -74,13 +74,9 @@ class LexerFormatter extends FormatterBase implements ContainerFactoryPluginInte
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $element = [];
 
-    // $tokens = $this->lexerService->tokenize('10 + 20 - 30 + 15 * 5');
-    $tokens = $this->lexerService->tokenize('5*5/10+30*2');
-
-
-    $value = $this->parserService->parse($tokens);
-
     foreach ($items as $delta => $item) {
+      $tokens = $this->lexerService->tokenize($item->value);
+      $value = $this->parserService->parse($tokens);
       $element[$delta] = ['#markup' => 
         "
           <div class='math-result-container'>
@@ -101,9 +97,6 @@ class LexerFormatter extends FormatterBase implements ContainerFactoryPluginInte
       ];
       $element[$delta]['#cache']['max-age'] = 0;
     }
-
-
-    
 
     return $element;
   }

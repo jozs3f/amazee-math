@@ -4,3 +4,16 @@
  * @file
  * This is the module to mathematical lexer and parser.
  */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function amazee_math_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($bundle === 'lexer_parser') {
+    if (isset($fields['field_lexerparser_data'])) {
+      $fields['field_lexerparser_data']->addConstraint('Lexer', []);
+    }
+  }
+}
