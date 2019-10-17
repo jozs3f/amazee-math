@@ -1,5 +1,15 @@
 # Math Lexer & Parser
 
+## Task
+
+Create a simple (plus / minus / multiplication / division) mathematical Lexer &Parser service and make it available as a field formatter plugin in Drupal 8. Output this field to the Frontend.
+
+  1. The Parser needs to be able to compute simple mathematical operationsusing the most basic operators (+, -, *, /) without using eval().for example: “10 + 20 - 30 + 15 * 5” should return 75.
+  2. Make sure you take care of operator precedence using infix notation.
+  3. Provide a field formatter plugin in a Drupal 8 module that uses this Service.
+  4. Provide a simple unit test with a data provider (@dataProvider) thattests the tokenization (lexing) and parsing of a few different computations.
+  5. Add a frontend component in a template language (Twig, React) ofyour choice that will animate the calculation in the frontend, i.e. you first show the entire formula and on-hover, the text transitions into thecomputed outcome.  
+
 ## Requirements
   - docker
 
